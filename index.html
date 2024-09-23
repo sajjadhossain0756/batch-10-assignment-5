@@ -18,7 +18,6 @@
                 <div class="navbar">
                     <div class="navbar-start ">
                       <button id="blog-btn" class="px-3 py-2 rounded-lg bg-[#B4F461] lg:px-8 lg:py-3 font-semibold text-lg lg:text-xl">Blog</button>
-                      <button id="home-btn" class="px-3 hidden py-2 rounded-lg bg-[#B4F461] lg:px-8 lg:py-3 font-semibold text-lg lg:text-xl">Home</button>
                     </div>
                     <div class="navbar-center lg:flex">
                       <ul class=" px-1">
@@ -37,21 +36,21 @@
                     </div>
                   </div>
             </nav>
-            <div class="flex justify-center gap-4 pt-20 pb-8">
-                <button id="donation-btn" class="rounded-lg font-semibold text-xl border-2 px-8 py-4 bg-[#B4F461]">Donation</button>
-                <button id="history-btn" class="rounded-lg font-semibold text-xl border-2 px-8 py-4">History</button>
+            <div class="flex justify-center gap-4 pt-10 pb-8">
+                <button id="donation-btn" class="rounded-lg font-semibold text-xl border-2 px-4 py-2 md:px-8 md:py-4 bg-[#B4F461]">Donation</button>
+                <button id="history-btn" class="rounded-lg font-semibold text-xl border-2 px-4 py-2 md:px-8 md:py-4">History</button>
             </div>
      </header>
      <!-- main section start here -->
       <main>
-          <section id="donation-card" class="lg:mx-24 flex flex-col gap-8">
+          <section id="donation-card" class="lg:mx-24 flex flex-col justify-center items-center gap-8">
               <!-- card-one start here -->
-              <div class="hero border-2 rounded-xl">
+              <div class="max-w-[420px] lg:max-w-full hero border-2 rounded-xl">
                 <div class="hero-content flex-col lg:flex-row gap-8">
                   <img
                     src="./assets/noakhali.png"
-                    class="max-w-md lg:max-w-lg rounded-lg shadow-2xl" />
-                  <div>
+                    class="max-w-sm md:max-w-md lg:max-w-lg rounded-lg shadow-2xl" />
+                  <div class="max-w-sm lg:max-w-lg ">
                     <div class="flex gap-2 bg-slate-100 w-fit py-2 px-3 text-lg rounded">
                       <img src="./assets/coin.png" alt="">
                       <span id="total-account-balance-nowakali">0</span><span>BDT</span>
@@ -74,12 +73,12 @@
               </div>
 
               <!-- card-two start here -->
-              <div class="hero border-2 rounded-xl">
+              <div class="max-w-[420px] lg:max-w-full hero border-2 rounded-xl">
                 <div class="hero-content flex-col lg:flex-row gap-8">
                   <img
                     src="./assets/feni.png"
-                    class="max-w-md lg:max-w-lg  rounded-lg shadow-2xl" />
-                  <div>
+                    class="max-w-sm md:max-w-md lg:max-w-lg  rounded-lg shadow-2xl" />
+                  <div class="max-w-sm md:max-w-md lg:max-w-lg">
                     <div class="flex gap-2 bg-slate-100 w-fit py-2 px-3 text-lg rounded">
                         <img src="./assets/coin.png" alt="">
                         <span id="total-account-balance-feni">600</span><span>BDT</span> 
@@ -102,12 +101,12 @@
               </div>
 
               <!-- card-three start here -->
-              <div class="hero border-2 rounded-xl">
+              <div class="max-w-[420px] lg:max-w-full hero border-2 rounded-xl">
                 <div class="hero-content flex-col lg:flex-row gap-8">
                   <img
                     src="./assets/quota-protest.png"
-                    class="max-w-md lg:max-w-lg  rounded-lg shadow-2xl" />
-                  <div>
+                    class="max-w-sm md:max-w-md lg:max-w-lg  rounded-lg shadow-2xl" />
+                  <div class="max-w-sm md:max-w-md lg:max-w-lg">
                     <div class="flex gap-2 bg-slate-100 w-fit py-2 px-3 text-lg rounded">
                         <img src="./assets/coin.png" alt="">
                         <span id="total-account-balance-quota">2400</span><span>BDT</span> 
@@ -137,9 +136,9 @@
                <div id="pop-up-container" class="popup-container">
                      <h2 class="text-3xl font-bold">Congrates!</h2>
                      <div class="flex justify-center py-4"><img src="./assets/coin.png" alt=""></div>
-                     <p class="pt-5 pb-3">You have donated for humankind</p>
+                     <p class="pt-0 md:pt-5 pb-3">You have donated for humankind</p>
                      <p class="text-2xl font-bold text-green-500">Successfully</p>
-                     <button id="close-pop-up" class="btn mt-6">Close Confirmation</button>
+                     <button id="close-pop-up" class="btn mt-3 md:mt-6">Close Confirmation</button>
                </div>
           </section>
       </main>
@@ -149,6 +148,5 @@
       </footer>
       
       <script src="./JS/index.js"></script>
-      <script src="./JS/blog.js"></script>
 </body>
 </html>

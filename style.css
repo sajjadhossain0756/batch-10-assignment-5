@@ -20,3 +20,11 @@
     transform: scale(1);
     visibility: visible;
 }
+
+@media screen and (max-width:576px) {
+    .popup-container{
+        left: 15%;
+        width: 300px;
+        height: 250px;
+    }
+}

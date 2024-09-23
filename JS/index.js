@@ -95,3 +95,9 @@ document.getElementById('donation-btn').addEventListener('click',function(){
     historyPart.classList.add('hidden');
 })
 
+document.getElementById('blog-btn').addEventListener('click',function(){
+     
+    window.location.href = './blog.html';
+   return;
+});
+
