@@ -8,14 +8,14 @@ document.getElementById('donate-nowakali-btn').addEventListener('click',function
 // donation calculation part for feni
 document.getElementById('donate-feni-btn').addEventListener('click',function(){
     
-    getDonateCalculate('donate-feni','total-account-balance-feni','femine-2024 at Feni');
+    getDonateCalculate('donate-feni','total-account-balance-feni','Flood Relief at Feni');
 
 });
 
 // donation calculation part for quota
 document.getElementById('donate-quota-btn').addEventListener('click',function(){
     
-    getDonateCalculate('donate-quota','total-account-balance-quota','Injured in the Quota Movement');
+    getDonateCalculate('donate-quota','total-account-balance-quota','Aid for Injured in the Quota Movement');
 
 }); 
 
@@ -95,6 +95,7 @@ document.getElementById('donation-btn').addEventListener('click',function(){
     historyPart.classList.add('hidden');
 })
 
+// fantionality for blog button;
 document.getElementById('blog-btn').addEventListener('click',function(){
      
     window.location.href = './blog.html';
