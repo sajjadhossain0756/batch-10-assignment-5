@@ -19,12 +19,6 @@ document.getElementById('donate-quota-btn').addEventListener('click',function(){
 
 }); 
 
-// pop-up close button function
-document.getElementById('close-pop-up').addEventListener('click',function(){
-    const popUpContainer = document.getElementById('pop-up-container');
-
-    popUpContainer.classList.remove('pop-up');
-});
 
 // common function for all card calculation
 function getDonateCalculate(id,display,title){
@@ -32,7 +26,8 @@ function getDonateCalculate(id,display,title){
     let totalCardAccountBalane = parseFloat(document.getElementById(display).innerText);
     let cardInputField = parseFloat(document.getElementById(id).value);
     let inputField = document.getElementById(id);
-
+    
+    // cardInput field validation
     if(cardInputField <= 0 || cardInputField > totalAccountBalance || inputField.value.trim() == ''){
           
           alert('Sorry! your input is invalid');
@@ -44,8 +39,8 @@ function getDonateCalculate(id,display,title){
     console.log(totalBalance);
     let totalCardBalance = totalCardAccountBalane + cardInputField;
 
-    document.getElementById('total-account-balance').innerText = totalBalance;
-    document.getElementById(display).innerText = totalCardBalance;
+    document.getElementById('total-account-balance').innerText = totalBalance.toFixed(2);
+    document.getElementById(display).innerText = totalCardBalance.toFixed(2);
     
     // history section function
     const historyPart = document.getElementById('history-part');
@@ -67,6 +62,13 @@ function getDonateCalculate(id,display,title){
     
     document.getElementById(id).value = '';
 };
+
+// pop-up close button function
+document.getElementById('close-pop-up').addEventListener('click',function(){
+    const popUpContainer = document.getElementById('pop-up-container');
+
+    popUpContainer.classList.remove('pop-up');
+});
 
 // fantionality for history button
 document.getElementById('history-btn').addEventListener('click',function(){
@@ -90,8 +92,8 @@ document.getElementById('donation-btn').addEventListener('click',function(){
     const historyPart = document.getElementById('history-part');
 
     historyBtn.classList.remove('bg-[#B4F461]');
-    donationBtn.classList.add('bg-[#B4F461]');
     cardContainer.classList.remove('hidden');
+    donationBtn.classList.add('bg-[#B4F461]');
     historyPart.classList.add('hidden');
 })
 
@@ -99,6 +101,6 @@ document.getElementById('donation-btn').addEventListener('click',function(){
 document.getElementById('blog-btn').addEventListener('click',function(){
      
     window.location.href = './blog.html';
-   return;
+   
 });
 
